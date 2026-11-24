@@ -3,19 +3,35 @@
   "name": "sarvam-gujarati-mcp",
   "main": "src/index.js",
   "compatibility_date": "2026-11-24",
-  "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
+  "compatibility_flags": [
+    "nodejs_compat",
+    "global_fetch_strictly_public"
+  ],
   "workers_dev": true,
   "preview_urls": false,
-  "observability": { "enabled": false },
-   "kv_namespaces": [
+  "observability": {
+    "enabled": false
+  },
+  "kv_namespaces": [
     {
       "binding": "OAUTH_KV",
       "id": "4c06029928f64a5b872764663d4c50e1"
     }
   ],
-  "r2_buckets": [{ "binding": "AUDIO", "bucket_name": "sarvam-gujarati-audio" }],
-  "durable_objects": { "bindings": [{ "name": "LIMITER", "class_name": "UsageLimiter" }] },
-  "migrations": [{ "tag": "v1", "new_sqlite_classes": ["UsageLimiter"] }],
+  "durable_objects": {
+    "bindings": [
+      {
+        "name": "LIMITER",
+        "class_name": "UsageLimiter"
+      }
+    ]
+  },
+  "migrations": [
+    {
+      "tag": "v1",
+      "new_sqlite_classes": ["UsageLimiter"]
+    }
+  ],
   "vars": {
     "MCP_RESOURCE": "https://sarvam-gujarati-mcp.100350111023ec4.workers.dev/mcp",
     "DAILY_CHAR_LIMIT": "6000",
