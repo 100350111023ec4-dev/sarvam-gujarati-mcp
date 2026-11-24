@@ -7,7 +7,12 @@
   "workers_dev": true,
   "preview_urls": false,
   "observability": { "enabled": false },
-  "kv_namespaces": [{ "binding": "OAUTH_KV", "id": "REPLACE_WITH_KV_ID" }],
+   "kv_namespaces": [
+    {
+      "binding": "OAUTH_KV",
+      "id": "4c06029928f64a5b872764663d4c50e1"
+    }
+  ],
   "r2_buckets": [{ "binding": "AUDIO", "bucket_name": "sarvam-gujarati-audio" }],
   "durable_objects": { "bindings": [{ "name": "LIMITER", "class_name": "UsageLimiter" }] },
   "migrations": [{ "tag": "v1", "new_sqlite_classes": ["UsageLimiter"] }],
