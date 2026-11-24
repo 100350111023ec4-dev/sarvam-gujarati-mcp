@@ -1,0 +1,20 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "sarvam-gujarati-mcp",
+  "main": "src/index.js",
+  "compatibility_date": "2026-11-24",
+  "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
+  "workers_dev": true,
+  "preview_urls": false,
+  "observability": { "enabled": false },
+  "kv_namespaces": [{ "binding": "OAUTH_KV", "id": "REPLACE_WITH_KV_ID" }],
+  "r2_buckets": [{ "binding": "AUDIO", "bucket_name": "sarvam-gujarati-audio" }],
+  "durable_objects": { "bindings": [{ "name": "LIMITER", "class_name": "UsageLimiter" }] },
+  "migrations": [{ "tag": "v1", "new_sqlite_classes": ["UsageLimiter"] }],
+  "vars": {
+    "MCP_RESOURCE": "https://sarvam-gujarati-mcp.REPLACE_WITH_WORKERS_SUBDOMAIN.workers.dev/mcp",
+    "DAILY_CHAR_LIMIT": "6000",
+    "DAILY_REQUEST_LIMIT": "40",
+    "AUDIO_LINK_HOURS": "24"
+  }
+}

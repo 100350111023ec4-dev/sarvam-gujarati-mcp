@@ -1,0 +1,8 @@
+{
+  "lines": [
+    {"role":"Employee","text":"ભાઈ, રજા માટે નાનો ઈમેલ લખી આપને!","model":"bulbul:v3","speaker":"ratan","pace":0.9},
+    {"role":"AI Robot","text":"હા ભાઈ, આ લો... પાંચ પાનાંનો ઈમેલ!","model":"bulbul:v4-flash","speaker":"pooja_gu_conversational","pace":0.9},
+    {"role":"Employee","text":"અરે ભાઈ! મારે રજા જોઈએ છે, પી.એચ.ડી. નથી કરવી!","model":"bulbul:v3","speaker":"ratan","pace":0.9},
+    {"role":"AI Robot","text":"તો પહેલાં કહેવું જોઈએ ને, ત્રણ જ વાક્યમાં લખવાનું છે!","model":"bulbul:v4-flash","speaker":"pooja_gu_conversational","pace":0.9}
+  ]
+}
